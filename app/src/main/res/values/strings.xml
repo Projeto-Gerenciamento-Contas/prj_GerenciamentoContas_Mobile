@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TetoFinancas</string>
+    <string name="min_height">50dp</string>
 </resources>
