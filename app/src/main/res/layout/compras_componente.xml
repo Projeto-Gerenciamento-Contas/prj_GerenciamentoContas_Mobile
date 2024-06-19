@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pal2"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="3"
+        tools:srcCompat="@drawable/comprasw" />
+
+    <LinearLayout
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_nomeItemCompra_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txt_quantidade_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                 />
+
+            <TextView
+                android:id="@+id/txt_valorCompra_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                 />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_editar_row"
+        android:layout_width="39dp"
+        android:layout_height="41dp"
+        android:layout_weight="3"
+        android:backgroundTint="@color/pal2"
+        android:visibility="visible"
+        app:icon="@drawable/editarw" />
+
+    <Button
+        android:id="@+id/btn_excluir_row"
+        android:layout_width="39dp"
+        android:layout_height="41dp"
+        android:layout_weight="3"
+        android:backgroundTint="@color/pal2"
+        android:visibility="visible"
+        app:icon="@drawable/excluir" />
+
+</LinearLayout>

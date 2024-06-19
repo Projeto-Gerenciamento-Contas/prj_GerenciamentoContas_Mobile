@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pal1">
+
+
+    <TextView
+        android:id="@+id/txt_formItemcompranome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do Item"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.301"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.181" />
+
+    <TextView
+        android:id="@+id/txt_formItemcompraquantidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantidade"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.332" />
+
+    <TextView
+        android:id="@+id/txt_formItemcompravalor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.293"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.463" />
+
+    <EditText
+        android:id="@+id/edt_valorItemCompra"
+        android:layout_width="221dp"
+        android:layout_height="40dp"
+        android:background="@drawable/borda_redonda_branca"
+        android:ems="10"
+        android:fontFamily="@font/sen"
+        android:hint="R$: 00,00"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.525" />
+
+    <Button
+        android:id="@+id/btn_salvar"
+        android:layout_width="74dp"
+        android:layout_height="65dp"
+        android:foreground="@drawable/confirmar"
+        android:foregroundGravity="center_vertical|clip_horizontal|center"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.636" />
+
+    <Button
+        android:id="@+id/btn_cancelar"
+        android:layout_width="74dp"
+        android:layout_height="65dp"
+        android:foreground="@drawable/cancel"
+        android:foregroundGravity="center_vertical|clip_horizontal|center"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_salvar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.777"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_salvar"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txt_salvarItemCompras"
+        android:layout_width="278dp"
+        android:layout_height="58dp"
+        android:fontFamily="@font/sen_bold"
+        android:text="Salvar Item"
+        android:textColor="@color/pal2"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <EditText
+        android:id="@+id/edt_nomeItemCompra"
+        android:layout_width="221dp"
+        android:layout_height="40dp"
+        android:background="@drawable/borda_redonda_branca"
+        android:ems="10"
+        android:fontFamily="@font/sen"
+        android:hint="Ex: Carne"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edt_quantidade"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_quantidade"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.253" />
+
+    <EditText
+        android:id="@+id/edt_quantidade"
+        android:layout_width="221dp"
+        android:layout_height="40dp"
+        android:background="@drawable/borda_redonda_branca"
+        android:ems="10"
+        android:fontFamily="@font/sen"
+        android:hint="Ex:10 Kg ou 5 peças"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.385"
+        tools:layout_editor_absoluteX="95dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
