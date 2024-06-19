@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pal1">
+
+    <TextView
+        android:id="@+id/txt_nomeAparelhoG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do aparelho"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.182" />
+
+    <TextView
+        android:id="@+id/txt_tempoUsoAparelhoG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tempoUso"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.332" />
+
+    <TextView
+        android:id="@+id/txt_valorAparelhoG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="valor do aparelho"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.345"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.466" />
+
+    <TextView
+        android:id="@+id/txt_potenciaAparelhoG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vazao"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.599" />
+
+    <TextView
+        android:id="@+id/txt_salvarAparelhoG"
+        android:layout_width="278dp"
+        android:layout_height="58dp"
+        android:fontFamily="@font/sen_bold"
+        android:text="@string/salvar"
+        android:textColor="@color/pal2"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <Button
+        android:id="@+id/btn_cancelar"
+        android:layout_width="74dp"
+        android:layout_height="65dp"
+        android:foreground="@drawable/cancel"
+        android:foregroundGravity="center_vertical|clip_horizontal|center"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_salvar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_salvar"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text=" " />
+
+    <Button
+        android:id="@+id/btn_salvar"
+        android:layout_width="74dp"
+        android:layout_height="65dp"
+        android:foreground="@drawable/confirmar"
+        android:foregroundGravity="center_vertical|clip_horizontal|center"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.777" />
+
+    <EditText
+        android:id="@+id/edt_nomeAparelhoG"
+        android:layout_width="221dp"
+        android:layout_height="50dp"
+        android:background="@drawable/borda_redonda_branca"
+        android:ems="10"
+        android:fontFamily="@font/sen"
+        android:hint="Ex: fogão"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edt_tempoUsoAparelhoG"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_tempoUsoAparelhoG"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.253" />
+
+    <EditText
+        android:id="@+id/edt_tempoUsoAparelhoG"
+        android:layout_width="221dp"
+        android:layout_height="50dp"
+        android:background="@drawable/borda_redonda_branca"
+        android:ems="10"
+        android:fontFamily="@font/sen"
+        android:hint="00:00"
+        android:inputType="time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edt_valorAparelhoG"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_valorAparelhoG"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.385" />
+
+    <EditText
+        android:id="@+id/edt_valorAparelhoG"
+        android:layout_width="221dp"
+        android:layout_height="50dp"
+        android:background="@drawable/borda_redonda_branca"
+        android:ems="10"
+        android:fontFamily="@font/sen"
+        android:hint="R$: 00,00"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edt_potenciaAparelhoG"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_potenciaAparelhoG"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.527" />
+
+    <EditText
+        android:id="@+id/edt_potenciaAparelhoG"
+        android:layout_width="221dp"
+        android:layout_height="50dp"
+        android:background="@drawable/borda_redonda_branca"
+        android:ems="10"
+        android:fontFamily="@font/sen"
+        android:hint="6"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.662" />
+</androidx.constraintlayout.widget.ConstraintLayout>

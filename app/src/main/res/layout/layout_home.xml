@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pal1"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_total_gastos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sen_bold"
+        android:text="Total de gastos"
+        android:textAlignment="center"
+        android:textColor="@color/pal2"
+        android:textSize="34sp" />
+
+    <ListView
+        android:layout_width="433dp"
+        android:layout_height="371dp" />
+
+    <TextView
+        android:id="@+id/txt_residencias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sen_bold"
+        android:text="Residencias"
+        android:textAlignment="center"
+        android:textColor="@color/pal2"
+        android:textSize="34sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_lista_enderecos"
+        android:layout_width="match_parent"
+        android:layout_height="348dp" />
+
+    <Button
+        android:id="@+id/btnAdicionarEnderecos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add" />
+
+</LinearLayout>
